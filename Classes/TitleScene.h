@@ -1,0 +1,15 @@
+#include "cocos2d.h"
+using namespace cocos2d;
+
+class TitleScreen : public cocos2d::Layer
+{
+private:
+	Sprite* _title;
+	Sprite* _cursor;
+	int current = 0;
+public:
+	static cocos2d::Scene* createScene();
+	virtual bool init();
+
+	CREATE_FUNC(TitleScreen);
+};
